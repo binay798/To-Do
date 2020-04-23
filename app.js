@@ -40,13 +40,19 @@ function deleteItem(){
     let tick = document.querySelectorAll(".fa-check-circle");
     tick.forEach(item =>{
         item.addEventListener("click",(e) =>{
-            e.target.style.color = 'brown';
-            e.target.nextSibling.style.color = 'gray';
-            e.target.nextSibling.style.fontStyle = 'italic';
-            e.target.nextSibling.style.textDecoration = 'line-through';
-            console.log();
+            let color = e.target.style.color;
             
-            
+            if(color == 'aqua'){
+                e.target.style.color = 'brown';
+                e.target.nextSibling.style.color = 'gray';
+                e.target.nextSibling.style.fontStyle = 'italic';
+                e.target.nextSibling.style.textDecoration = 'line-through';
+            }else{
+                e.target.style.color = 'aqua';
+                e.target.nextSibling.style.color = 'black';
+                e.target.nextSibling.style.fontStyle = 'normal';
+                e.target.nextSibling.style.textDecoration = 'none';
+            }
         })
     })
 
