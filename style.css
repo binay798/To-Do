@@ -1,60 +1,108 @@
 *{
+    padding: 0;
     margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.content{
-   box-shadow: 0px 0px 30px 2px rgb(221, 216, 216); 
-   
-   
-}
-.top{
-    background:linear-gradient(to right,blue,aqua);
-    background-size: contain;
-    width:250px;
-    height:150px;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bottom{
-    height:270px;
-    position: relative;
-    padding:5px;
-    overflow-y: scroll;
+.heading{
+    padding-top: 50px;
+    width:50%;
+    border-right: 1px solid gray;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    height: 100vh;
     
 }
-.add-to-do{
-    border:1px solid rgb(201, 190, 190);
-    width:85%;
-    padding:5px;
+
+.infos{
+    position: absolute;
+    left:50%;
+    right:0;
+    
+}
+.input-details{
+    margin-top:45px;
+    margin-left: 25px;
+    
+}
+input[type="text"]{
+    margin:0 auto;
+    width: 75%;
+    border:2px solid orange;
+    padding:10px;
+    border-radius: 14px;
+    outline: none;
+}
+input[type="email"]{
+    margin:0 auto;
+    width: 75%;
+    border:2px solid orange;
+    padding:10px;
+    border-radius: 14px;
+    outline: none;
+}
+
+
+textarea{
+    margin:0 auto;
+    width: 75%;
+    border:2px solid orange;
+    padding:15px;
     border-radius: 4px;
+    outline: none;
+    height: 100px;
 }
-.add{
-    margin-bottom: 1em;
-}
-.item{
-    border-bottom: 1px solid rgb(211, 206, 206);
-    padding:5px;
-    
-}
-i{
-    cursor: pointer;
 
+button{
+    border:2px solid rgb(226, 149, 6);
+    border-radius: 24px;
+    width:150px;
+    padding:10px;
+    background-color: orange;
+    cursor: pointer;
+    float: right;
+    margin-right: 130px;
+    outline: none;
 }
-.items{
-    margin-bottom: 1em;
+button:hover{
+    background-color: rgb(224, 149, 9);
+}
+
+.all-infos{
+    margin:0 50px 0 50px;
     
 }
-.fa-times-circle{
+
+.info{
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    display: flex;
+    margin-top: 1em;
+    box-shadow: 0px 0px 3px 1px rgb(165, 156, 156);
+}
+.infos > h1{
+    margin-bottom: 65px;
+    margin-top: 0px;
+    padding-top: 55px;
+    box-shadow: 0px 0px 10px -1px rgb(150, 147, 147);
+    
+}
+.profile{
+    padding:10px;
+    width:70px;
+}
+.right{
+    padding-top:25px;
+    margin-left: 25px;
+}
+.right > p{
+    font-style: italic;
+}
+.fa-trash-o{
+    margin-left: auto;
+    cursor: pointer;
     color:red;
 }
-
+.fa-trash-o:hover{
+    color:rgb(203, 216, 16);
+}

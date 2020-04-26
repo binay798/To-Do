@@ -7,30 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="app.js" defer></script>
 </head>
 <body>
-  
-    <div class="container">
-        <div class="content">
-            <div class="top">
-                <h1>To Do App</h1>
-            </div>
-            <div class="bottom">
-                <div class="add">     
-                    <input type="text" placeholder="Add" class="add-to-do" >
-                    <i class="fa fa-plus-circle " style="color:blue;font-size: 25px;"></i>
-                </div>
-                <div class="items">
-                   
-                    
-                    
-                </div>
-                
-                
-            </div>
-        </div>
-    </div>
+   <div class="container">
+       <div class="heading">
+           <div class="header">
+            <h1 style="text-align: center;">ADD PERSONAL INFO</h1>
+           </div>
+           <div class="input-details"><br>
+               <label for="">FIRST NAME</label><br>
+               <input type="text" class="firstname"><br><br>
+               <label for="">LAST NAME</label><br>
+               <input type="text" class="lastname"><br><br>
+               <label for="">EMAIL</label><br>
+               <input type="email" class="email"><br><br>
+               <label for="">ADD SOME OF YOUR INFO OR HOBBIES</label><br>
+               <textarea name="info" id="textarea" class="your-info"></textarea><br><br>
+               <button type="submit" onclick="addAllItemsToLocal()">Submit</button>
+           </div>
+           
+       </div>
+       <div class="infos">
+           <h1 style="text-align: center;position: sticky;top:0px;background-color: white;">Details</h1>
+       </div>
+   </div>
    
 </body>
 </html>
